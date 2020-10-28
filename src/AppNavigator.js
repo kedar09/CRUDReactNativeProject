@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import HomeScreenPage from './Components/Pages/HomeScreen/HomeScreenPage';
+import HomePage from './components/Pages/Home/HomePage';
 
 const Stack = createStackNavigator();
 
@@ -11,7 +11,7 @@ export const AppNavigator = () => {
       <Stack.Navigator>
         <Stack.Screen
           name="Home"
-          component={HomeScreenPage}
+          component={HomePage}
           options={{ title: 'Crud Operation' }}
         />
         {/* <Stack.Screen name="Profile" component={ProfileScreen} /> */}
